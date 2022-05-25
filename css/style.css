@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 600 15px "Droid Sans",Helvetica,sans-serif
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span {
+    display: block;
+}
+
+
+.container, .header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-primary > .container, .navbar-middle > .container, .navbar-bottom > .container {
+    height: 4rem;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container-navbar {
+    display: grid;
+    max-width: 95%;
+    margin: 5px auto;
+    grid-template-columns: 32% 32% 32% 6%;
+    align-items: center;
+}
+
+.navbar-primary a {
+    white-space: nowrap;
+}
+
+.icon {
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+
+.menu-label {
+    padding-left: 10px;
+}
+
+
+.hidden-logo {
+    visibility: hidden;
+}
+
+.user {
+    display: none;
+}
+
+.access-button ul {
+    justify-content: flex-end;
+}
+
+.access-button li {
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #006394;
+}
+
+.access-button a {
+    color: white;
+}
+
+.date {
+    margin-left: 10px;
+    color: #0a0908;
+}
+
+.date .e-edition {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 2px;
+    color: #0a0908;
+}
+
+.date a:link {
+    color: black;
+}
+
+.navbar-bottom a {
+    padding: 0 15px 0 15px;
+    color: black;
+}
+
+.trending-bar > .container {
+    max-width: 100%;
+    height: 4rem;;
+    justify-content: flex-start;
+    border-top: 1px solid black;
+}
+
+.trending-bar p {
+    font-weight: 600;
+    color: #006394;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.trending-bar a {
+    padding: 0 15px 0 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.breaking-news a {
+    color: #0A0908;
+}
+
+.breaking-news {
+    height: 3rem;
+    max-width: 99%;
+    margin: 0 auto;
+    background-color: #FFC518;
+}
+
+.grid-container-breaking-news {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% auto 2%;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.breaking-news h2 {
+    font-weight: 700;
+    margin-left: 10px;
+    flex-basis: 15%;
+}
+
+.breaking-news article a {
+    font: normal 600 18px "Droid Sans",Helvetica,sans-serif;
+    font-weight: 500;
+}
+
+#content article {
+    font-size: 29px;
+    text-align: center;
+}
+
+#content span {
+    text-align: center;
+    font-weight: 500;
+}
+
+.subscriber {
+    font: 13px "Source Sans Pro", Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    background-color: #006394;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+#content h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recommended {
+    margin: 5px;
+    max-width: 70%;
+}
+
+.header-article {
+    color: #006394;
+    border-bottom: 2px solid #006394;
+    width: 70%;
+    margin: 5px;
+}
+
+.header-article-grid {
+    grid-column: 1/-1;
+}
+
+.header-article h2{
+    font-weight: normal;
+}
+
+.recommended .grid-container-recommend {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+.recommended i{
+    padding: 5px;
+}
+
+
+.recommended a {
+    font-weight: 700;
+    color: black;
+    margin: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 23.3% 23.3% 23.3%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.article-phone, .article-tablet {
+    display: none;
+}
+
+.grid-container h2 {
+    border-bottom: 2px solid #006394;
+    padding-bottom: 5px;
+}
+
+.grid-container i, .grid-container a:hover {
+    color: #006394;
+}
+
+.grid-container a, .header-article h2 {
+    font-size: 20px;
+    color: #38322A;
+    font-weight: 400;
+    margin-right: 5px; /*spazio tra il testo e l'icona*/
+}
+.article {
+    margin-bottom: 30px;
+}
+
+.article a {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.article span {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.item-link {
+    border-bottom: 1px solid gray;
+    padding: 10px 0 10px 0;
+}
+
+.photos {
+    grid-column: 1 / 3;
+}
+
+.links .item-link {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.footer-container .header-container, .footer-container .container {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container .header-container:nth-child(1) {
+    border-top: 1px solid gray;
+    border-bottom: 3px solid black;
+}
+
+.footer-container .container:nth-child(n+2) a:nth-child(n+2) {
+    font-weight: 400;
+}
+
+.footer-container .container:nth-last-child(1) {
+    border-bottom: 3px solid black;
+}
+
+.footer-container > .header-container > div {
+    margin-left: auto;
+    padding: 15px;
+}
+
+.footer-container a {
+    color: black;
+    padding: 15px;
+}
+
+.footer-container i {
+    margin-right: 10px;
+}
+
+@media screen and (max-device-width: 480px){
+    .grid-container-navbar { grid-template-columns: 30% 30% 30% 10% ;}
+    .menu-label {visibility: hidden;}
+    .hidden-logo { visibility: visible; }
+    .user {display: flex; justify-content: flex-end;}
+    .search {display: flex; justify-content: flex-end;}
+    .access-button { display: none; }
+    .navbar-middle, .navbar-bottom, .trending-bar, .breaking-news {display: none;}
+
+    .header {width: 95%;}
+    .recommended {max-width: 100%;}
+    .recommended > .grid-container-recommend {grid-template-columns: auto;}
+
+    .grid-container {grid-template-columns: auto;}
+    .article-phone {display: grid;}
+    .article-desktop {display: none;}
+    .photos-item {background-image: url(https://via.placeholder.com/355×254) no-repeat; width: 355px; height: 254px;}
+    .photos {grid-column: auto;}
+
+    .footer-container .header-container, .footer-container .container { flex-flow: column; }
+    .footer-container .container {align-items: flex-start;}
+    .footer-container .container > a:nth-child(n+2) {visibility: hidden ;}
+    .footer-container .header-container > div {margin: auto;}
+    
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1112px) {
+    .navbar-middle, .navbar-bottom, .trending-bar, .breaking-news {display: none;}
+    .grid-container {grid-template-columns: auto auto;}
+    .article-desktop {display: none;}
+    .article-phone {display: none;}
+    .article-tablet {display: grid;}
+}
